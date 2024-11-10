@@ -17,5 +17,4 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     console.error('Error processing prompt:', error);
     return NextResponse.json({ message: 'Error updating JSON', error: (error as Error).message }, { status: 500 });
-  }
-}
+  }}
