@@ -57,7 +57,6 @@ export const Form = ({ selectedComponent, setUserInputData }: FormProps) => {
           </h2>
           {renderFormContent()}
         </div>
-      </motion.div>
     </>
   );
 };
