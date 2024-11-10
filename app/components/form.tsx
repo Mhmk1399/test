@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
 import { RichText } from './forms/richTextForm'
 import { Header } from './forms/header';
 
@@ -38,7 +37,7 @@ export const Form = ({ selectedComponent, setUserInputData }: FormProps) => {
       </div>
 
       {/* Mobile/Tablet Bottom Sheet */}
-      <motion.div
+      
         drag="y"
         dragConstraints={{ top: 0, bottom: 0 }}
         initial={{ y: "calc(100% - 40px)" }}
