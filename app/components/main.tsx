@@ -2,38 +2,30 @@
 import React, { useEffect, useState } from 'react'
 import { Preview } from './preview';
 import { Form } from './form';
-import { Compiler } from './compiler';
 import data from '../../public/template/null.json'
+import {Layout }from '../../lib/types'
 
-
-interface DataType {
-  // Define your JSON structure here
-  id: number;
-  title: string;
-  // Add more fields as needed
-}
 
 export const Main = () => {
+  const Data = data as unknown as Layout;
   const [loading, setLoading] = useState(true);
-  const [layout, setLayout] = useState({});
-  const [selectedComponent, setSelectedComponent] = useState<string>('header');
-  const [userInputData, setUserInputData] = useState<{}>({});
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/api/your-endpoint'); // Replace with your API endpoint
-        const jsonData = await response.json();
-        setLoading(false);
-      } catch (error) {
-        setLoading(false);
-      }
-    };
+  const [layout, setLayout] = useState<Layout>(Data);
+  const [selectedComponent, setSelectedComponent] = useState<string>('sectionHeader');
 
-    fetchData();
+  useEffect(() => {
+    // const fetchData = async () => {
+    //   try {
+    //     const response = await fetch('/api/your-endpoint'); // Replace with your API endpoint
+    //     const jsonData = await response.json();
+    //     setLoading(false);
+    //   } catch (error) {
+        
+    //   }
+    // };
+    setLoading(false);
+    // fetchData();
   }, []);
   
-  const compiledData = Compiler(data, selectedComponent);
-
 
   return (
     <div>
@@ -47,12 +39,11 @@ export const Main = () => {
         </div>
       ) : (
         <div>
-<Preview 
-  layout={layout}
-  setSelectedComponent={setSelectedComponent}
-  
-/>
-          <Form selectedComponent={selectedComponent} setUserInputData={setUserInputData} />
+          <Preview 
+            layout={layout}
+            setSelectedComponent={setSelectedComponent}
+          />
+          <Form selectedComponent={selectedComponent} setLayout={setLayout} layout={layout} />
         </div>
       )}
     </div>

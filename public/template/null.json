@@ -12,7 +12,6 @@
     "sectionHeader": {
       "type": "header",
       "blocks": {
-        "tilte": "title",
         "imageLogo": "",
         "imageAlt": "",
         "links": [
@@ -35,8 +34,8 @@
         }
       },
       "setting": {
-        "paddingTop": "20px",
-        "paddingBottom": "20px",
+        "paddingTop": "20",
+        "paddingBottom": "20",
         "marginTop": "0px",
         "marginBottom": "0px",
         "navbarPosition": "fixed"
@@ -50,98 +49,72 @@
           "blocks": {
             "imageSrc": "",
             "imageAlt": "",
-            "text": "",
-            "description": "",
+            "text": "heading of banner default",
+            "description": "description of banner ",
             "imageLink": "",
             "setting": {
-              "descriptionColor": "#333",
-              "descriptionFontSize": "16px",
+              "descriptionColor": "#333333",
+              "descriptionFontSize": "15",
               "descriptionFontWeight": "normal",
-              "textColor": "#fff",
-              "textFontSize": "24px",
+              "descriptionFontSizeMobile": "14",
+              "textColor": "#000000",
+              "textFontSize": "30",
               "textFontWeight": "bold",
-              "positionBoxTextDesktop": "center",
+              "textFontSizeMobile": "20",
               "backgroundColorBox": "#fff",
               "backgroundBoxRadious": "10px",
-              "textAlignmentBoxDesktop": "center",
-              "textAlignmentBoxMobile": "center",
-              "opacityImage": 0.5,
-              "imageWidth": "100px",
-              "imageHeight": "100px",
-              "imageRadious": "10px",
+              "opacityImage": 1,
+              "opacityTextBox": 1,
+              "imageRadious": "14px",
               "imageBehavior": "cover"
             }
           },
-          "settings": {
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "marginTop": "0px",
-            "marginBottom": "0px"
+          "setting": {
+            "paddingTop": "10",
+            "paddingBottom": "20",
+            "marginTop": "20",
+            "marginBottom": "80"
           }
         },
         {
           "type": "slideshow",
           "blocks": [
             {
-              "imageSrc": "src",
+              "imageSrc": "/assets/images/banner3.jpg",
               "imageAlt": "",
-              "text": "",
-              "description": "",
+              "text": "text1",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur totam repellat fugiat deleniti odio quaerat assumenda nulla quo quam rem tempore, praesentium autem numquam iste,",
               "btnLink": "",
-              "btnText": "Shop Now",
-              "setting": {
-                "descriptionColor": "#333",
-                "descriptionFontSize": "16px",
-                "descriptionFontWeight": "normal",
-                "textColor": "#fff",
-                "textFontSize": "24px",
-                "textFontWeight": "bold",
-                "btnTextColor": "#fff",
-                "btnBackgroundColor": "#333",
-                "positionBoxTextDesktop": "center",
-                "backgroundColorBox": "#fff",
-                "backgroundBoxRadious": "10px",
-                "textAlignmentBoxDesktop": "center",
-                "textAlignmentBoxMobile": "center",
-                "opacityImage": 0.5,
-                "imageWidth": "100px",
-                "imageHeight": "100px",
-                "imageRadious": "10px"
-              }
+              "btnText": "Shop Now"
             },
             {
-              "imageSrc": "src",
+              "imageSrc": "/assets/images/banner1.jpg",
               "imageAlt": "",
-              "text": "",
-              "description": "",
+              "text": "text2",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur  assumenda nulla quo quam rem tempore, praesentium autem numquam iste,",
               "link": "",
-              "btnText": "Shop Now",
-              "setting": {
-                "descriptionColor": "#333",
-                "descriptionFontSize": "16px",
-                "descriptionFontWeight": "normal",
-                "textColor": "#fff",
-                "textFontSize": "24px",
-                "textFontWeight": "bold",
-                "btnTextColor": "#fff",
-                "btnBackgroundColor": "#333",
-                "positionBoxTextDesktop": "center",
-                "backgroundColorBox": "#fff",
-                "backgroundBoxRadious": "10px",
-                "textAlignmentBoxDesktop": "center",
-                "textAlignmentBoxMobile": "center",
-                "opacityImage": 0.5,
-                "imageWidth": "100px",
-                "imageHeight": "100px",
-                "imageRadious": "10px"
-              }
+              "btnText": "Shop Now"
             }
           ],
-          "settings": {
+          "setting": {
             "paddingTop": "20px",
             "paddingBottom": "20px",
             "marginTop": "0px",
-            "marginBottom": "0px"
+            "marginBottom": "0px",
+            "descriptionColor": "#ffffff",
+            "descriptionFontSize": "16px",
+            "descriptionFontWeight": "normal",
+            "textColor": "#000000",
+            "textFontSize": "24px",
+            "textFontWeight": "bold",
+            "btnTextColor": "#ffffff",
+            "btnBackgroundColor": "#5b8e7d",
+            "backgroundColorBox": "#bc4b51",
+            "backgroundBoxRadious": "10px",
+            "opacityImage": 1,
+            "imageWidth": "700px",
+            "imageHeight": "500px",
+            "imageRadious": "10px"
           }
         },
         {
@@ -152,84 +125,85 @@
             "btnText": "button",
             "btnLink": "/",
             "setting": {
-              "textHeadingColor": "#000",
-              "textHeadingFontSize": "20px",
+              "textHeadingColor": "#000000",
+              "textHeadingFontSize": "40px",
               "textHeadingFontWeight": "bold",
-              "descriptionColor": "#000",
-              "descriptionFontSize": "16px",
+              "descriptionColor": "#000000",
+              "descriptionFontSize": "25px",
               "descriptionFontWeight": "normal",
               "background": "#e4e4e4",
-              "btnTextColor": "#fff",
-              "btnBackgroundColor": "#333",
+              "btnTextColor": "#ffffff",
+              "btnBackgroundColor": "#333333",
               "allTextPosition": "center"
             }
           },
 
           "setting": {
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "marginTop": "10px",
-            "marginBottom": "10px"
+            "paddingTop": "20",
+            "paddingBottom": "20",
+            "marginTop": "100",
+            "marginBottom": "10"
           }
         },
         {
           "type": "image-text",
           "blocks": {
-            "imageSrc": "src",
+            "imageSrc": "/assets/images/banner3.jpg",
             "imageAlt": "",
             "heading": "",
             "description": "",
             "btnLink": "",
-            "btnText": "Shop Now",
+            "btnText": "",
             "setting": {
               "headingColor": "#333",
-              "headingFontSize": "20px",
+              "headingFontSize": "50px",
               "headingFontWeight": "bold",
-              "descriptionColor": "#333",
-              "descriptionFontSize": "16px",
+              "descriptionColor": "#333333",
+              "descriptionFontSize": "20px",
               "descriptionFontWeight": "normal",
-              "btnTextColor": "#fff",
-              "btnBackgroundColor": "#333",
-              "textAlignmentBoxDesktop": "center",
-              "textAlignmentBoxMobile": "center",
-              "opacityImage": 0.5,
-              "imageWidth": "100px",
-              "imageHeight": "100px",
-              "imageRadious": "10px"
+              "btnTextColor": "#ffffff",
+              "btnBackgroundColor": "#000000",
+              "backgroundColorBox": "",
+              "backgroundBoxOpacity": 0.9,
+              "boxRadiuos": "20px",
+              "opacityImage": 1,
+              "imageWidth": "850px",
+              "imageHeight": "700px",
+              "background": "#e4e4e4"
             }
           },
-          "settings": {
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "marginTop": "0px",
-            "marginBottom": "0px",
-            "DesktopImagePlacementRow": "row"
+          "setting": {
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "marginTop": "10000px",
+            "marginBottom": "0px"
           }
         },
         {
           "type": "video",
           "blocks": {
-            "heading": "",
-            "videoUrl": "",
-            "alt": "",
+            "heading": "video heading",
+            "videoUrl": "/assets/video/video.mp4",
+            "videoAlt": "",
             "setting": {
-              "headingColor": "#333",
-              "headingFontSize": "20px",
+              "headingColor": "#000",
+              "headingFontSize": "30px",
               "headingFontWeight": "bold",
-              "videoWidth": "100px",
-              "videoHeight": "100px",
-              "videoRadious": "10px",
-              "videoLoop": "false",
-              "videoMute": "false",
-              "videoAutoplay": "false",
-              "videoPoster": "src"
+              "videoWidth": "1000px",
+              "videoHeight": "700px",
+              "videoRadious": "20px",
+              "videoLoop": true,
+              "videoMute": false,
+              "videoAutoplay": true,
+              "videoPoster": "/assets/images/banner2.webp",
+              "backgroundVideoSection": "#e4e4e4"
             }
           },
           "setting": {
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "marginTop": "0px",
-            "marginBottom": "0px"
+            "paddingTop": "20",
+            "paddingBottom": "20",
+            "marginTop": "10",
+            "marginBottom": "10"
           }
         },
         {
@@ -237,19 +211,19 @@
           "blocks": {
             "heading": "",
             "setting": {
-              "headingColor": "#333",
-              "headingFontSize": "20px",
+              "headingColor": "#ffffff",
+              "headingFontSize": "25px",
               "headingFontWeight": "bold",
-              "btnBackgroundColor": "#333",
-              "btnTextColor": "#fff",
-              "btnBackground": "#333"
+              "btnBackgroundColor": "#9c119c",
+              "btnTextColor": "#ffffff",
+              "formBackground": "#11769c"
             }
           },
           "setting": {
             "paddingTop": "20px",
             "paddingBottom": "20px",
-            "marginTop": "0px",
-            "marginBottom": "0px"
+            "marginTop": "20px",
+            "marginBottom": "20px"
           }
         },
         {
@@ -257,174 +231,197 @@
           "blocks": {
             "heading": "",
             "description": "",
+            "btnText": "",
+
             "setting": {
-              "headingColor": "#333",
-              "headingFontSize": "20px",
+              "headingColor": "#ffffff",
+              "headingFontSize": "27px",
               "headingFontWeight": "bold",
-              "descriptionColor": "#333",
-              "descriptionFontSize": "16px",
-              "descriptionFontWeight": "normal"
+              "descriptionColor": "#e4e4e4",
+              "descriptionFontSize": "18px",
+              "descriptionFontWeight": "normal",
+              "btnBackgroundColor": "#ea7777",
+              "btnTextColor": "#ffffff",
+              "formBackground": "#005002"
             }
           },
           "setting": {
             "paddingTop": "20px",
             "paddingBottom": "20px",
-            "marginTop": "0px",
-            "marginBottom": "0px"
+            "marginTop": "20px",
+            "marginBottom": "20px"
           }
         },
         {
           "type": "collapse",
-          "heading": "",
           "blocks": [
             {
-              "text": "",
-              "content": "",
+              "heading": "collapse",
+              "text1": "text",
+              "content1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nobis quo velit ut dolor consequuntur cupiditate? Aperiam ab praesentium minus aliquam nemo. Esse, illum. Eligendi eum consectetur ",
               "setting": {
-                "headingColor": "#333",
-                "headingFontSize": "20px",
-                "headingFontWeight": "bold",
-                "contentColor": "#333",
-                "contentFontSize": "16px",
-                "contentFontWeight": "normal"
+                "textColor1": "#ffffff",
+                "textFontSize1": "20px",
+                "textFontWeight1": "bold",
+                "contentColor1": "#ffffff",
+                "contentFontSize1": "16px",
+                "contentFontWeight1": "normal"
               }
             },
             {
-              "text": "",
-              "content": "",
+              "text2": "text",
+              "content2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nobis quo velit ut dolor consequuntur cupiditate? Aperiam ab praesentium minus aliquam nemo. Esse, illum. Eligendi eum consectetur ",
               "setting": {
-                "headingColor": "#333",
-                "headingFontSize": "20px",
-                "headingFontWeight": "bold",
-                "contentColor": "#333",
-                "contentFontSize": "16px",
-                "contentFontWeight": "normal"
+                "textColor2": "#000000",
+                "textFontSize2": "20px",
+                "textFontWeight2": "bold",
+                "contentColor2": "#ffffff",
+                "contentFontSize2": "16px",
+                "contentFontWeight2": "normal"
               }
             },
             {
-              "text": "",
-              "content": "",
+              "text3": "text",
+              "content3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nobis quo velit ut dolor consequuntur cupiditate? Aperiam ab praesentium minus aliquam nemo. Esse, illum. Eligendi eum consectetur ",
               "setting": {
-                "headingColor": "#333",
-                "headingFontSize": "20px",
-                "headingFontWeight": "bold",
-                "contentColor": "#333",
-                "contentFontSize": "16px",
-                "contentFontWeight": "normal"
+                "textColor3": "#ffffff",
+                "textFontSize3": "20px",
+                "textFontWeight3": "bold",
+                "contentColor3": "#ffffff",
+                "contentFontSize3": "16px",
+                "contentFontWeight3": "normal"
               }
             },
             {
-              "text": "",
-              "content": "",
+              "text4": "text",
+              "content4": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nobis quo velit ut dolor consequuntur cupiditate? Aperiam ab praesentium minus aliquam nemo. Esse, illum. Eligendi eum consectetur ",
               "setting": {
-                "headingColor": "#333",
-                "headingFontSize": "20px",
-                "headingFontWeight": "bold",
-                "contentColor": "#333",
-                "contentFontSize": "16px",
-                "contentFontWeight": "normal"
+                "textColor4": "#000000",
+                "textFontSize4": "20px",
+                "textFontWeight4": "bold",
+                "contentColor4": "#ffffff",
+                "contentFontSize4": "16px",
+                "contentFontWeight4": "normal"
               }
             }
           ],
           "setting": {
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "marginTop": "0px",
-            "marginBottom": "0px",
-            "headingAlignment": "center",
-            "headingFontSize": "20px",
-            "headingFontWeight": "bold"
+            "paddingTop": "20",
+            "paddingBottom": "20",
+            "marginTop": "10",
+            "marginBottom": "10",
+            "headingColor": "#ffffff",
+            "headingFontSize": "30px",
+            "headingFontWeight": "bold",
+            "background": "#672f93",
+            "borderRadious": "20px"
           }
         },
         {
           "type": "multicolumn",
-          "heading": "",
-          "btnText": "",
-          "btnLink": "",
           "blocks": [
             {
-              "title": "",
-              "description": "",
-              "imageSrc": "",
-              "imageAlt": "",
-              "btnLable": "",
-              "btnLink": ""
+              "title1": "title1",
+              "description1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit magni commodi molestias nam expedita fugiat natus eos atque aliquid. Neque temporibus itaque deserunt eum quas commodi,",
+              "imageSrc1": "/assets/images/banner1.jpg",
+              "imageAlt1": "",
+              "btnLable1": "",
+              "btnLink1": ""
             },
             {
-              "title": "",
-              "description": "",
-              "imageSrc": "",
-              "imageAlt": "",
-              "btnLable": "",
-              "btnLink": ""
+              "title2": "title2",
+              "description2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit magni commodi molestias nam expedita fugiat natus eos atque aliquid. Neque temporibus itaque deserunt eum quas commodi,",
+              "imageSrc2": "/assets/images/banner3.jpg",
+              "imageAlt2": "",
+              "btnLable2": "",
+              "btnLink2": ""
             },
             {
-              "title": "",
-              "description": "",
-              "imageSrc": "",
-              "imageAlt": "",
-              "btnLable": "",
-              "btnLink": ""
+              "title3": "title3",
+              "description3": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit magni commodi molestias nam expedita fugiat natus eos atque aliquid. Neque temporibus itaque deserunt eum quas commodi,",
+              "imageSrc3": "/assets/images/banner.jpg",
+              "imageAlt3": "",
+              "btnLable3": "",
+              "btnLink3": ""
             }
           ],
           "setting": {
+            "heading": "heading column",
             "paddingTop": "20px",
             "paddingBottom": "20px",
-            "marginTop": "0px",
-            "marginBottom": "0px",
-            "backgroundColorBox": "#fff",
-            "gridDisplayDesktop": "3",
-            "gridDisplayMobile": "1",
-            "headingAlignment": "center",
-            "headingFontSize": "20px",
+            "marginTop": "20px",
+            "marginBottom": "20px",
+            "backgroundColorBox": "#82c0cc",
+            "headingFontSize": "30px",
             "headingFontWeight": "bold",
-            "headingColor": "#333",
-            "imageRadious": "0px",
-            "imageWidth": "100px",
-            "imageHeight": "100px"
+            "headingColor": "#ffffff",
+            "imageRadious": "10px",
+            "imageWidth": "400px",
+            "imageHeight": "300px",
+            "imageBehavior": "cover",
+            "titleColor": "#ffa62b",
+            "titleFontSize": "25px",
+            "titleFontWeight": "bold",
+            "descriptionColor": "#e4e4e4",
+            "descriptionFontSize": "18px",
+            "descriptionFontWeight": "normal",
+            "btnColor": "#ffffff",
+            "btnBackgroundColor": "#16697a"
           }
         },
         {
           "type": "multiRow",
+          "title": "multiRow",
+
           "blocks": [
             {
-              "heading": "",
-              "description": "",
-              "btnLable": "",
+              "heading": "heading1",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro necessitatibus ad vero ratione veritatis quos vel labore expedita molestiae dignissimos voluptatem, at non,",
+              "btnLable": "button1",
               "btnLink": "",
-              "imageSrc": "",
+              "imageSrc": "/assets/images/banner1.jpg",
               "imageAlt": ""
             },
             {
-              "heading": "",
-              "description": "",
-              "btnLable": "",
+              "heading": "heading2",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro necessitatibus ad vero ratione veritatis quos vel labore expedita molestiae dignissimos voluptatem, at non,",
+              "btnLable": "button2",
               "btnLink": "",
-              "imageSrc": "",
+              "imageSrc": "/assets/images/banner3.jpg",
               "imageAlt": ""
             },
             {
-              "heading": "",
-              "description": "",
-              "btnLable": "",
+              "heading": "heading3",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro necessitatibus ad vero ratione veritatis quos vel labore expedita molestiae dignissimos voluptatem, at non,",
+              "btnLable": "button3",
               "btnLink": "",
-              "imageSrc": "",
+              "imageSrc": "/assets/images/banner.jpg",
               "imageAlt": ""
             }
           ],
           "setting": {
+            "titleColor": "#000000",
+            "titleFontWeight": "bold",
+            "titleFontSize": "35px",
             "paddingTop": "20px",
             "paddingBottom": "20px",
-            "marginTop": "0px",
-            "marginBottom": "0px",
-            "backgroundColorMultiRow": "#fff",
-            "backgroundColorBox": "#fff",
-            "textAlignmentBoxDesktop": "center",
-            "textAlignmentBoxPosition": "left",
-            "textAlignmentBoxMobile": "center",
-            "imageRadious": "0px",
-            "imageWidth": "100px",
-            "imageHeight": "100px"
+            "marginTop": "20px",
+            "marginBottom": "20px",
+            "backgroundColorMultiRow": "#8d99ae",
+            "backgroundColorBox": "#2b2d42",
+            "imageRadious": "10px",
+            "imageWidth": "700px",
+            "imageHeight": "300px",
+            "imageRadius": "45px",
+            "headingColor": "#fcbf49",
+            "headingFontSize": "30px",
+            "headingFontWeight": "bold",
+            "descriptionColor": "#e4e4e4",
+            "descriptionFontSize": "18px",
+            "descriptionFontWeight": "normal",
+            "btnColor": "#ffffff",
+            "btnBackgroundColor": "#bc4749",
+            "imageAlign":"row"
           }
         }
       ],
