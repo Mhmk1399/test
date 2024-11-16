@@ -1,65 +1,71 @@
-// pages/index.js
-"use client";
-import { useState } from 'react';
+'use client'
+import { useState } from 'react'
 
-export default function Home() {
-  const [prompt, setPrompt] = useState('');
-  const [responseJson, setResponseJson] = useState<any>(null);
-  const [error, setError] = useState<string | null>(null);
+export default function CreateProject() {
+  const [projectName, setProjectName] = useState('')
+  const [status, setStatus] = useState<'idle' | 'creating' | 'created' | 'error'>('idle')
+  const [logs, setLogs] = useState<string[]>([])
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    setError(null);
-
+  const handleCreate = async () => {
+    setStatus('creating')
+    setLogs([])
     try {
-      const res = await fetch('/api/updateJson', {
+      const response = await fetch('/api/createWebsite', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ prompt }),
-      });
-
-      if (!res.ok) {
-        throw new Error(`Error: ${res.statusText}`);
-      }
-
-      const data = await res.json();
-      setResponseJson(data.updatedJson);
-    } catch (err) {
-      if (err instanceof Error) {
-        setError(err.message);
-      } else {
-        setError('An unknown error occurred');
-      }
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ projectName })
+      })
+      
+      const data = await response.json()
+      
+      if (!response.ok) throw new Error('Failed to create website')
+      
+      // Add logs from the backend
+      setLogs(data.logs)
+      setStatus('created')
+    } catch (error) {
+      setStatus('error')
+      setLogs(prev => [...prev, '❌ Error: ' + (error as Error).message])
     }
-  };
+  }
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Website JSON Generator</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Enter your prompt:
-          <textarea
-            value={prompt}
-            onChange={(e) => setPrompt(e.target.value)}
-            rows={4}
-            cols={50}
-            style={{ display: 'block', marginTop: '10px', marginBottom: '10px' }}
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+      <input
+        type="text"
+        value={projectName}
+        onChange={(e) => setProjectName(e.target.value)}
+        placeholder="Enter project name"
+        className="mb-4 p-2 border rounded"
+      />
+      <button
+        onClick={handleCreate}
+        disabled={status === 'creating' || !projectName}
+        className={`px-6 py-3 rounded-lg text-white ${
+          status === 'creating' ? 'bg-gray-400' :
+          status === 'created' ? 'bg-green-500' :
+          status === 'error' ? 'bg-red-500' :
+          'bg-blue-500 hover:bg-blue-600'
+        }`}
+      >
+        {status === 'creating' ? 'Creating...' :
+         status === 'created' ? 'Created!' :
+         status === 'error' ? 'Error!' :
+         'Create New Website'}
+      </button>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-
-      {responseJson && (
-        <div style={{ marginTop: '20px' }}>
-          <h2>Updated JSON</h2>
-          <pre>{JSON.stringify(responseJson, null, 2)}</pre>
+      {/* Logs Display */}
+      {logs.length > 0 && (
+        <div className="mt-8 w-full max-w-2xl">
+          <div className="bg-black text-green-400 p-4 rounded-lg font-mono text-sm">
+            {logs.map((log, index) => (
+              <div key={index} className="py-1">
+                {log}
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>
-  );
+  )
 }
